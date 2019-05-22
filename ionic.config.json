@@ -1,5 +1,8 @@
 {
   "name": "selim-ajimi",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

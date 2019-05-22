@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-text style="justify-content: center; display: flex!important;">Bienvuenue {{ username }}</ion-text>
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col style="justify-content: center; display: flex!important;">
+        <ion-text>Hello</ion-text>
+      </ion-col>
+      <ion-col>
+        <ion-text style="justify-content: center; display: flex!important;">Worl</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <ion-item (click)="goToDetail(course)" *ngFor="let course of courses">
+    <ion-label>{{ course.nom}}</ion-label>
+    <ion-label>{{course.h_deb}}h</ion-label>
+  </ion-item>
+</ion-content>

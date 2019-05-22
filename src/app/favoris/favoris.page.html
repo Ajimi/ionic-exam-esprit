@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>favoris</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item *ngFor="let course of favorites">
+      <ion-label> COURS : </ion-label>
+        <ion-label>{{ course.nom}}</ion-label>
+      </ion-item>
+</ion-content>
